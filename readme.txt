@@ -19,4 +19,18 @@ cat 文件名 % 查看文件内容
 git reset --hard (commit id 前五位即可) %版本回退或者前进
 但有时候并不知道commit id 这时可以运行
 
-git reflog  查看命令
+git reflog  查看命
+
+放弃修改：
+情况1 没有git add 文件名 ，可以直接  git checkout --文件名
+情况2 已经git add 文件名 ，可以先git reset HEAD 文件名  这是情况2变为了情况1
+情况3 已经提交了，可以git reset --hard (commit id) 回退到上一个版本
+
+删除文件
+rm 文件名
+git rm 文件名
+git commit -m "renmove"
+
+若误删时，可以利用
+git checkout --文件名 恢复文件到最新提交的版本
+
