@@ -32,5 +32,5 @@ git rm 文件名
 git commit -m "renmove"
 
 若误删时，可以利用
-git checkout --文件名 恢复文件到最新提交的版本
+git checkout --文件名 恢复文件到最新提交的版本  %%%测试似乎不可以
 
